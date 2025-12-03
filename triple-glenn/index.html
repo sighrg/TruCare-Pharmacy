@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TruCare Pharmacy | Bay City, MI</title>
+    <meta
+      name="description"
+      content="TruCare Pharmacy in Bay City, MI offers compounding, immunizations, free delivery, and durable medical equipment. Your trusted local pharmacy."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a href="index.html" class="logo">
+            <img src="logo.jpg" alt="TruCare Pharmacy Logo" style="height: 60px;">
+          </a>
+          <div class="mobile-toggle" id="mobile-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a href="contact.html" class="btn btn-primary">Transfer Rx</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>Your Health, Our Priority</h1>
+          <p>Serving the Bay City community with personalized care, medication checks, and at-home vaccines. We are your Medicare Part D and Medicaid Experts.</p>
+          <a
+            href="contact.html"
+            class="btn btn-white"
+            style="
+              background: white;
+              color: var(--primary-color);
+              font-weight: bold;
+              padding: 1rem 2rem;
+              border-radius: 50px;
+            "
+            >Visit Us Today</a
+          >
+        </div>
+      </section>
+
+      <div class="container">
+        <div class="info-banner">
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <strong>1002 Lafayette Ave</strong>
+              <br />Bay City, MI 48708
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+              <strong>(989) 778-2121</strong>
+              <br />Call Us
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <strong>Mon-Fri: 9am - 6pm</strong>
+              <br /><span
+                id="status-indicator"
+                style="color: var(--success); font-weight: bold"
+                >Checking status...</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="container" style="margin-bottom: var(--spacing-xl)">
+        <div style="text-align: center; margin-bottom: var(--spacing-lg)">
+          <h2>Why Choose TruCare?</h2>
+          <p>We go beyond just filling prescriptions. We care for you.</p>
+        </div>
+
+        <div class="features">
+          <div class="card">
+            <div class="card-icon"><i class="fas fa-truck-medical"></i></div>
+            <h3>Free Delivery</h3>
+            <p>
+              Can't make it to the pharmacy? We'll bring your medications
+              directly to your doorstep at no extra cost.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon"><i class="fas fa-pills"></i></div>
+            <h3>Medication Checks</h3>
+            <p>
+              Our pharmacists review your medications to ensure safety, prevent interactions, and optimize your health outcomes.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon"><i class="fas fa-house-medical"></i></div>
+            <h3>At-Home Vaccines</h3>
+            <p>
+              We bring immunization services to you. Get your flu shots and other vaccines in the comfort of your home.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-col">
+            <h3>TruCare Pharmacy</h3>
+            <p>
+              Dedicated to providing the best pharmaceutical care in Bay City.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Contact</h3>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 1002 Lafayette Ave, Bay
+                City, MI
+              </li>
+              <li><i class="fas fa-phone"></i> (989) 778-2121</li>
+              <li><i class="fas fa-fax"></i> (989) 778-2122</li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          &copy; 2025 TruCare Pharmacy. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

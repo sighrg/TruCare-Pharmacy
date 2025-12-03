@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <img id="logo" src="logo.jpg" style="display:none;" onload="getColor()">
+    <div id="result">Waiting...</div>
+    <script>
+        function getColor() {
+            var img = document.getElementById('logo');
+            var canvas = document.createElement('canvas');
+            canvas.width = img.width;
+            canvas.height = img.height;
+            var ctx = canvas.getContext('2d');
+            ctx.drawImage(img, 0, 0);
+            var p = ctx.getImageData(0, 0, 1, 1).data;
+            var hex = "#" + ("000000" + rgbToHex(p[0], p[1], p[2])).slice(-6);
+            document.getElementById('result').innerText = hex;
+        }
+        function rgbToHex(r, g, b) {
+            if (r > 255 || g > 255 || b > 255)
+                throw "Invalid color component";
+            return ((r << 16) | (g << 8) | b).toString(16);
+        }
+    </script>
+</body>
+</html>
